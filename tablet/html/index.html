@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <img src="img/case.png" draggable="false" class="case">
+    <div style="display: none;" class="pd-modal">
+        <br>
+        <h2>Eintrag hinzufügen</h2>
+        <input type="text" placeholder="Titel" class="ititle">
+        <input type="text" placeholder="Nachricht" class="imessage">
+        <input type="text" placeholder="Hafteinheiten" class="ijail">
+        <button class="add">Hinzufügen</button>
+        <button class="back">Abbrechen</button>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="header">
+                <div class="time">9:41 Mon Jun 6</div>
+                <svg onclick="back()" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up-double" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M13 14l-4 -4l4 -4"></path>
+                    <path d="M8 14l-4 -4l4 -4"></path>
+                    <path d="M9 10h7a4 4 0 1 1 0 8h-1"></path>
+                 </svg>
+            </div>
+            <div style="display: flex;" class="apps">
+                <div onclick="openApp(`pd`)" class="app">
+                    <img src="img/pd.png" class="app-icon">
+                    <p class="app-name">Aktensystem</p>
+                </div>
+            </div>
+            <div style="display: none;" class="pd">
+                <div class="header">
+                    <h1>Police</h1>
+                </div>
+                <div class="pd-user-data">
+                    <img src="https://lspd-academy.de/wp-content/uploads/2022/06/lspd-logo.png" class="pd-icon">
+                    <div style="margin-left: 1vh;" class="pd-user sec">
+                        <p class="name" style="color: blue; font-size: 2vh;">Philipp Sanchez</p>
+                        <p class="rank">Chief</p>
+                    </div>
+                </div>
+                <div style="display: none;" class="users">
+                    <table class="user-table">
+                        <thead class="activerow">
+                            <td style="color: #da9226;">Name</td>
+                            <td style="color: #da9226;">Beruf</td>
+                            <td style="color: #da9226;">Nummer</td>
+                            <td style="color: #da9226;">Gefängniszeit</td>
+                            <td style="color: #da9226;">Kredit</td>
+                        </thead>
+                    </table>
+                </div>
+                <div style="display: none;" class="pd-userdata">
+                    <div class="pd-u-top">
+                        <img draggable="false" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="pd-u-icon">
+                        <div class="right-u">
+                            <p>Name: <br><span class="u-name">Loading</span></p>
+                            <p>Beruf: <br><span class="u-job">Loading</span></p>
+                            <p>Nummer: <br><span class="u-number">Loading</span></p>
+                            <p>Gefängniszeit: <br><span class="u-jail">Loading</span></p>
+                            <p>Kredit: <br><span class="u-credit">Loading$</span></p>
+                            <button class="add-entry button">Eintrag hinzufügen</button>
+                        </div>
+                    </div>
+                    <div class="u-data-table">
+                        <table class="user-t-data">
+                            <thead>
+                                <td>Titel</td>
+                                <td>Nachricht</td>
+                                <td>Strafe</td>
+                                <td>Tag und Zeit</td>
+                            </thead>
+                            <tr>
+                                <td>Kleiner Junge</td>
+                                <td>Geht mir sehr auf die Nerven</td>
+                                <td>122 Hafteinheiten</td>
+                                <td>12:52 12/12/98</td>
+                            </tr>
+                            <tr>
+                                <td>Kleiner Junge</td>
+                                <td>Geht mir sehr auf die Nerven</td>
+                                <td>122 Hafteinheiten</td>
+                                <td>12:52 12/12/98</td>
+                            </tr>
+                            <tr>
+                                <td>Kleiner Junge</td>
+                                <td>Geht mir sehr auf die Nerven</td>
+                                <td>122 Hafteinheiten</td>
+                                <td>12:52 12/12/98</td>
+                            </tr>
+                            <tr>
+                                <td>Kleiner Junge</td>
+                                <td>Geht mir sehr auf die Nerven</td>
+                                <td>122 Hafteinheiten</td>
+                                <td>12:52 12/12/98</td>
+                            </tr>
+                            <tr>
+                                <td>Kleiner Junge</td>
+                                <td>Geht mir sehr auf die Nerven</td>
+                                <td>122 Hafteinheiten</td>
+                                <td>12:52 12/12/98</td>
+                            </tr>
+                            <tr>
+                                <td>Kleiner Junge</td>
+                                <td>Geht mir sehr auf die Nerven</td>
+                                <td>122 Hafteinheiten</td>
+                                <td>12:52 12/12/98</td>
+                            </tr>
+                            <tr>
+                                <td>Kleiner Junge</td>
+                                <td>Geht mir sehr auf die Nerven</td>
+                                <td>122 Hafteinheiten</td>
+                                <td>12:52 12/12/98</td>
+                            </tr>
+                            <tr>
+                                <td>Kleiner Junge</td>
+                                <td>Geht mir sehr auf die Nerven</td>
+                                <td>122 Hafteinheiten</td>
+                                <td>12:52 12/12/98</td>
+                            </tr>
+                            <tr>
+                                <td>Kleiner Junge</td>
+                                <td>Geht mir sehr auf die Nerven</td>
+                                <td>122 Hafteinheiten</td>
+                                <td>12:52 12/12/98</td>
+                            </tr>
+                            <tr>
+                                <td>Kleiner Junge</td>
+                                <td>Geht mir sehr auf die Nerven</td>
+                                <td>122 Hafteinheiten</td>
+                                <td>12:52 12/12/98</td>
+                            </tr>
+    
+                                                    <tr>
+                                <td>Kleiner Junge</td>
+                                <td>Geht mir sehr auf die Nerven</td>
+                                <td>122 Hafteinheiten</td>
+                                <td>12:52 12/12/98</td>
+                            </tr>
+                            <tr>
+                                <td>Kleiner Junge</td>
+                                <td>Geht mir sehr auf die Nerven</td>
+                                <td>122 Hafteinheiten</td>
+                                <td>12:52 12/12/98</td>
+                            </tr>
+                            <tr>
+                                <td>Kleiner Junge</td>
+                                <td>Geht mir sehr auf die Nerven</td>
+                                <td>122 Hafteinheiten</td>
+                                <td>12:52 12/12/98</td>
+                            </tr>
+                                                    <tr>
+                                <td>Kleiner Junge</td>
+                                <td>Geht mir sehr auf die Nerven</td>
+                                <td>122 Hafteinheiten</td>
+                                <td>12:52 12/12/98</td>
+                            </tr>
+                                                    <tr>
+                                <td>Kleiner Junge</td>
+                                <td>Geht mir sehr auf die Nerven</td>
+                                <td>122 Hafteinheiten</td>
+                                <td>12:52 12/12/98</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
